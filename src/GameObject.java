@@ -1,4 +1,9 @@
-public class GameObject {
+abstract public class GameObject {
     float x, y;
-    public void render() {}
+    char sprite;
+    boolean isActive;
+
+    abstract public void render();
+
+    abstract public void checkActive();
 }
