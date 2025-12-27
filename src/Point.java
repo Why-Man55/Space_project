@@ -5,7 +5,7 @@ public class Point {
     boolean hasSprite = false;
 
     {
-        this.brightness = 82f;
+        this.brightness = 0f;
     }
 
 
