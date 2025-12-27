@@ -8,11 +8,11 @@ public class GameContext {
     private static GameObjectList toAddBackground = new GameObjectList();
 
     public static int getWidth() {
-        return currentScreen.w;
+        return currentScreen.width;
     }
     
     public static int getHeight() {
-        return currentScreen.h;
+        return currentScreen.height;
     }
 
     public static boolean isInBounds(int x, int y) {
@@ -64,7 +64,7 @@ public class GameContext {
         toAddMain.clear();
         toAddBackground.clear();
 
-        currentScreen.refresh();
+        currentScreen.reset();
 
         renderLayer(backgroundObjects);
         renderLayer(mainObjects);

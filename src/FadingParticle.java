@@ -10,10 +10,9 @@ public class FadingParticle extends Particle{
 
     public void render() {
         if (isExpired(lifetime)) {
-            throw new RuntimeException("Particle lifetime ended");
-
             long elapsed = System.currentTimeMillis() - this.creationTime;
             this.brightness = 100f - (elapsed / (float)this.lifetime) * 100f;
+            throw new RuntimeException("Particle lifetime ended");
         }
     }
 
