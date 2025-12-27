@@ -5,7 +5,7 @@ public class BlinkingParticle extends Particle {
         BlinkingParticle(float x,float y) {
             super(x, y);
             this.brightness = 100f;
-            this.lifetime = 4000;
+            this.lifetime = 5000;
         }
 
         public void render() {
