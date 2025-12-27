@@ -18,5 +18,5 @@ public class BlinkingParticle extends Particle {
             this.brightness = 100f * (1 - Math.abs(progress));
 
         }
-    }
 }
+
