@@ -4,6 +4,4 @@ abstract public class GameObject {
     boolean isActive;
 
     abstract public void render();
-
-    abstract public void checkActive();
 }
