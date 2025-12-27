@@ -2,22 +2,20 @@ public class FadingParticle extends Particle{
     float brightness;
     long lifetime;
 
-    FadingParticle(int x, int y) {
+    FadingParticle(float x, float y) {
         super(x, y);
         this.brightness = 100f;
         this.lifetime = 5000;
     }
 
-    @Override
-    public void checkActive() {
-        if
-    }
-
     public void render() {
-        if(isExpired(lifetime)){
+        if (isExpired(lifetime)) {
+            throw new RuntimeException("Particle lifetime ended");
 
+            long elapsed = System.currentTimeMillis() - this.creationTime;
+            this.brightness = 100f - (elapsed / (float)this.lifetime) * 100f;
         }
-
-
     }
+
 }
+

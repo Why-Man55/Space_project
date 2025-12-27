@@ -2,7 +2,7 @@ abstract public class Particle extends GameObject {
     float x, y;
     long creationTime;
 
-        Particle(int x,int y) {
+        Particle(float x,float y) {
             this.x = x;
             this.y = y;
             creationTime = System.currentTimeMillis();
